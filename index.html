@@ -10950,26 +10950,6 @@
     </div>
     <button class="close-book">Cerrar</button>
 </div>
-
-<script>
-document.querySelectorAll('.book-button').forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelector('.book-animation').classList.remove('hidden');
-    });
-});
-
-document.querySelector('.close-book').addEventListener('click', () => {
-    document.querySelector('.book-animation').classList.add('hidden');
-});
-
-
-document.querySelector('.book').addEventListener('click', () => {
-    const pages = document.querySelectorAll('.book .page');
-    pages.forEach((page, index) => {
-        page.style.transform = `rotateY(${(index + 1) * 180}deg)`;
-    });
-});
-</script>
 </div>
 </body>
 </html>
